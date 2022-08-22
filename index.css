@@ -34,7 +34,7 @@ main.animated {
 }
 
 header {
-  margin-top: 4.7em;
+  margin-top: 12.7em;
   margin-bottom: -1em;
   text-align: center;
   display: flex;
@@ -44,10 +44,11 @@ header {
 
 header > img {
   /*margin-top: -10px;*/
-  margin-bottom: -21px;
+  margin-bottom: -12px;
   opacity: .9;
   width: 7.3em;
-  height: 9em;
+  height: 7.3em;
+  border-radius: 20%;
   /*border-radius: 100%;*/
   /*border: 1px solid rgb(44, 111, 32);*/
   /*box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;*/
@@ -100,3 +101,11 @@ a {
   color: black;
   text-decoration: none;
 }
+
+
+@media only screen and (max-width: 576px) {
+
+  header {
+    margin-top: 12.7em;
+  }
+} 
