@@ -6,6 +6,7 @@ body, html {
   font-family: 'Poppins', sans-serif;
   color: #fff;
   overflow: hidden;
+  transform: scale(0.9);
 }
 
 body {
@@ -104,6 +105,10 @@ a {
 
 
 @media only screen and (max-width: 576px) {
+
+  body{
+    transform: scale(0.9);
+  }
 
   header {
     margin-top: 6.7em;
