@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BACode Web Design Agency :: Marcelo Dato :: Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preload" href="./images/bg.jpg" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.globe.min.js"></script>-->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 0.5,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color1: 0x160b0b,
+          color2: 0xe0f0e,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0,
+        });
+
+        /*VANTA.GLOBE({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0,
+          color: 0x1c201c,
+          color2: 0x267a5c,
+          size: 0.5,
+        });*/
+
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 500);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="./images/bodie.png" />
+        <h1>Bodie Web Agency</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://website-mdato.vercel.app/" target="_blank" >
+            <img src="./images/design.svg" alt="Design" width="20" />
+            Creative
+          </a>
+        </li>
+
+       
+        
+        
+        <li>
+          <a href="https://github.com/mdato" target="_blank">
+            <img src="./images/github.svg" alt="GitHub" width="20" />
+            GitHub
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCqhXB6DZBEds4NqUT_4M7CA" target="_blank" 
+          >
+            <img src="./images/youtube.svg" alt="YouTube" width="20" />
+            YouTube
+          </a>
+        </li>
+
+        <li> 
+          <a href="https://bacode.com.ar/" target="_blank" >
+            <img src="./images/homepage.svg" alt="BACode" width="20" />
+            BACode
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

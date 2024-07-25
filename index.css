@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+body {
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  /*background: url('https://images.unsplash.com/photo-1513346936937-db17cd1390a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center center fixed;*/
+  background-size: cover;
+}
+
+#vanta {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: relative;
+}
+
+main.animated {
+  opacity: 0;
+  filter: blur(50px);
+  transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+
+header {
+  margin-top: 2.7em;
+  margin-bottom: -1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  /*margin-top: -10px;*/
+  margin-bottom: -12px;
+  opacity: .9;
+  width: 7.3em;
+  height: 7.3em;
+  border-radius: 20%;
+  /*border-radius: 100%;*/
+  /*border: 1px solid rgb(44, 111, 32);*/
+  /*box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;*/
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 2em;
+  background-color: #000a;
+  color: #fff;
+  padding: 0.4em 0.6em;
+  border: 1px solid rgba(51, 52, 55, 0.667);
+  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  
+}
+
+ul {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 300px;
+}
+
+ul > li {
+  background-color: #fffa;
+  opacity: .85;
+  backdrop-filter: blur(80px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  border-radius: 2em;
+  padding: 1em .5em;
+  margin: 1.4em 0;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+
+  
+}
+
+ul > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+  header {
+    margin-top: 6.7em;
+  }
+} 
