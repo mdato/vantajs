@@ -16,4 +16,4 @@ Full Stack Web Developer
 About this Project:
 -------------------
 * 🌍  Project based in ThreeJs
-* 🖥️  link to this app: [deploy-vercel](https://vantajs-crash-dos.vercel.app/)
+* 🖥️  link to this app: [deploy-vercel](https://vantajs.vercel.app/)
